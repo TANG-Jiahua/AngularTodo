@@ -27,15 +27,15 @@
      // 每一个任务的结构 { id: 1, text: '学习', completed: true }
      $scope.todos = [{
        id: 0.123,
-       text: '学习',
+       text: 'study',
        completed: false
     }, {
        id: 0.22,
-       text: '睡觉',
+       text: 'sleep',
        completed: false
      }, {
        id: 0.232,
-       text: '打豆豆',
+       text: 'play',
        completed: true
      }];
  
@@ -45,7 +45,7 @@
          return;
        }
        $scope.todos.push({
-         // 自动增长？
+         
          id: getId(),
         // 由于$scope.text是双向绑定的，add同时肯定可以同他拿到界面上的输入
          text: $scope.text,
